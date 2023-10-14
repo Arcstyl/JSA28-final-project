@@ -11,7 +11,7 @@ submitbtn.addEventListener('click', function(){
     } else if (password.value == repassword.value){
         localStorage.setItem("Username", username.value)
         localStorage.setItem("Password", password.value)
-        location.href = "main.html"
+        location.href = "index.html"
     } else {
         alert("Your re-entered password does not match your entered password")
     }

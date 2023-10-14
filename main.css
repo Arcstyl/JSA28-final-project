@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    height: 75px;
+    background-color: rgb(213, 104, 228);
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 2;
+}
+
+.navtitle{
+    color: white;
+    font-weight: light;
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+.navcontent{
+    display: flex;
+    margin-right: 50px;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.content{
+    color: white;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.content:before{
+    background-color: #6f3491;
+    transition: all 0.2s;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    height: 0%;
+    content: "";
+}
+
+.content:hover:before{
+    height: 100%;
+}
+
+.content:hover{
+    cursor: pointer;
+}
+
+#welcometext{
+    width: auto;
+    font-size: 20px;
+}
+
+/*-----------FOOTER-------------*/
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(#1f0a2b, #2a0640);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 75px;
+}
+
+.general, .links, .socials{
+    width: 30%;
+    height: 70%;
+}
+
+.line{
+    height: 70%;
+    border: 1px solid white;
+    opacity: .2;
+}
+
+.general{
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: lighter;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.address h1{
+    font-weight: lighter;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.links h2{
+    font-weight: lighter;
+}
+
+.socials h2{
+    font-weight: lighter;
+}
+
+.socials{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 300px;
+    height: 75px;
+    background-color: #481a63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line2{
+    border: 1px solid grey;
+    height: 70%;
+}
+
+.socialtext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 50%;
+    padding-left: 6%;
+    font-size: 25px;
+}
+
+.icon i{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.icon:hover{
+    background-color: #5b1f7e;
+    transition: 0.2s all;
+    width: 55%;
+}
+
+.icon:not(:hover){
+    background-color: #481a63;
+    transition: 0.2s all;
+    width: 300px;
+}
+
+#socialtext3{
+    font-size: 18px;
+}
+
+/*----------LANDING TITLE----------*/
+
+.landingimg{
+    margin-top: 75px;
+    position: relative;
+}
+
+.landingimg img{
+    width: 100%;
+    filter: brightness(50%);
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.imgcontainer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.maintext{
+    font-weight: light;
+    font-size: 80px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.subtext{
+    font-weight: lighter;
+    position: absolute;
+    font-size: 20px;
+    width: 30%;
+    text-align: right;
+    top: 40%;
+    right: 20%;
+}
+
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.landingbtn{
+    position: absolute;
+    background-color: transparent;
+    background-color: #5b1f7e;
+    border: none;
+    width: 10%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 60%;
+    right: 20%;
+}
+
+.landingbtn:hover{
+    background-color: #893eb4;
+    transition: 0.2s all;
+    width: 11%;
+}
+
+.landingbtn:not(:hover){
+    transition: 0.2s all;
+    background-color: #5b1f7e;
+    width: 10%;
+}
+
+.landingbutton{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/*-------------Events------------*/
+
+.events{
+    width: 100%;
+    height: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.eventstitle{
+    font-size: 40px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#slider{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidercontainer{
+    width: 1600px;
+    margin: auto;
+}
+
+.subslidercontainer{
+    width: 85%;
+    margin: auto;
+}
+
+.controller{
+    display: flex;
+    justify-content: space-between;
+}
+
+#controls i{
+    color: black;
+    font-size: 1rem;
+}
+
+#controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous, .next{
+    padding: 2px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    transform: .7s ease-in-out;
+    border: 3px solid rgb(223, 221, 218);
+    background-color: rgb(231, 229, 229);
+    box-shadow: 0 0 5px #bbb;
+}
+
+.previous:hover, .next:hover{
+    border: 3px solid  rgb(201, 198, 198);
+}
+
+.slide-img{
+    width: 100%;
+    height: 275px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.slide-img a{
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.5;
+}
+
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1{
+    background-image: url(https://media.istockphoto.com/id/978975308/vector/upcoming-events-neon-signs-vector-upcoming-events-design-template-neon-sign-light-banner-neon.jpg?s=612x612&w=0&k=20&c=VMCoJJda9L17HVkFOFB3fyDpjC4Qu2AsyYn3u4T4F4c=);
+}
+
+.img-2{
+    background-image: url(https://cdn.thewirecutter.com/wp-content/media/2022/09/backpacks-2048px-29.jpg);
+}
+
+.img-3{
+    background-image: url(https://cdn.thewirecutter.com/wp-content/media/2022/09/backpacks-2048px-29.jpg);
+}
+
+.img-4{
+    background-image: url(https://cdn.thewirecutter.com/wp-content/media/2022/09/backpacks-2048px-29.jpg);
+}
+
+.img-5{
+    background-image: url(https://cdn.thewirecutter.com/wp-content/media/2022/09/backpacks-2048px-29.jpg);
+}
+
+@media(max-width: 1600px){
+    .slidercontainer{
+        width: 100%;
+    }
+}
+
+.slidertitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: lighter;
+    background-color: rgb(175, 125, 33);
+    color: white
+}
+
+.newstitle{
+    display: flex;
+}
+
+.newstitle h3{
+    font-weight: light;
+}
+
+.newstitle h3:nth-child(1){
+    background-color: rgb(93, 91, 233);
+    color: white;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.newstitle h3:nth-child(2){
+    padding-left: 10px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.slide #desc p{
+    font-weight: lighter;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.n2 h3:nth-child(1){
+    background-color: rgb(221, 38, 38);
+    color: white;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+}

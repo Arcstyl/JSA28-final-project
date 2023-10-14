@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://kit.fontawesome.com/931fbdecb4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="navtitle">School</div>
+            <div class="navcontent">
+                <a href="main.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="./student.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                        <p>Students</p>
+                    </div>
+                </a>   
+                <a href="./course.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-book-open fa-xl" style="color: #ffffff;"></i>
+                        <p>Courses</p>
+                    </div>
+                </a>
+                <a href="./contact.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-regular fa-address-card fa-xl" style="color: #ffffff;"></i>
+                        <p>Contact us</p>
+                    </div>
+                </a>
+                <a href="./cart.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
+                        <p id="cart">Your Cart</p>
+                    </div>
+                </a>
+                <a href="./login.html" style="text-decoration: none;">
+                    <div class="content" id="registerbutton">
+                        <i class="fa-solid fa-right-to-bracket fa-xl" style="color: #ffffff;"></i>
+                        <p>Register</p>
+                    </div>
+                </a>
+                <a href="account.html" style="text-decoration: none;">
+                    <div class="content" id="welcometext"></div>
+                </a>
+            </div>
+        </nav>
+
+        <p style="margin-top: 175px; font-weight: lighter; font-size: 60px; margin-left: 10%;">Your Cart</p>
+
+        <section class="coursecart">
+            <div class="heading">
+                <p>Quantity</p>
+                <p>Course Name</p>
+                <p>Price</p>
+            </div>
+            <div class="productinfo">
+                <div style="display: flex;">
+                    <p id="quantity">66</p>
+                    <button id="decrease"style="height: 30px; width: 30px; font-size: 20px; margin-left: 5px; background: none; cursor: pointer; border-radius: 5px;">-</button>
+                    <button id="increase" style="height: 30px; width: 30px; font-size: 20px; margin-left: 5px; background: none; cursor: pointer; border-radius: 5px;">+</button>
+                </div>
+                <p id="cname">CS50's Intro to Computer Science</p>
+                <p id="price">$80.50</p>
+            </div>
+            <button id="purchasecourse">Go to Checkout</button>
+        </section>
+
+        <footer>
+            <div class="general">
+                <div class="address">
+                    <h1>School Name</h1>
+                    <p>Address: 30215 Abcdef St., XXXX County, NJ</p>
+                    <p>Tel: (+1) 5833 9518</p>
+                </div>
+                <div class="aboutus">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque expedita velit porro eligendi, voluptatem vero molestias esse ipsa, atque optio veritatis quaerat dolor, placeat distinctio temporibus dolore. Tempora, dolores.</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="links">
+                <h2>Relevant links</h2>
+                <p><a href="main.html">Home</a></p>
+                <p><a href="student.html">Students</a></p>
+                <p><a href="course.html">Courses</a></p>
+                <p><a href="contact.html">Contact us</a></p>
+                <p><a href="">Your Cart</a></p>
+                <p><a href="login.html">Login</a></p>
+            </div>
+            <div class="line"></div>
+            <div class="socials">
+                <h2>Socials</h2>
+                <div class="icon">
+                    <div class="socialtext">Follow us on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext">See our videos on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext" id="socialtext3">Keep up with our recent news with</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./cart.js"></script>
+    </body>
+</html>

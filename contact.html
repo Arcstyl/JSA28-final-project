@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://kit.fontawesome.com/931fbdecb4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="navtitle">School</div>
+            <div class="navcontent">
+                <a href="main.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="./student.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                        <p>Students</p>
+                    </div>
+                </a>
+                <a href="./course.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-book-open fa-xl" style="color: #ffffff;"></i>
+                        <p>Courses</p>
+                    </div>
+                </a>
+                <a href="./contact.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-regular fa-address-card fa-xl" style="color: #ffffff;"></i>
+                        <p>Contact us</p>
+                    </div>
+                </a>
+                <a href="./cart.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
+                        <p id="cart">Your Cart</p>
+                    </div>
+                </a>
+                <a href="./login.html" style="text-decoration: none;">
+                    <div class="content" id="registerbutton">
+                        <i class="fa-solid fa-right-to-bracket fa-xl" style="color: #ffffff;"></i>
+                        <p>Register</p>
+                    </div>
+                </a>
+                <a href="account.html" style="text-decoration: none;">
+                    <div class="content" id="welcometext"></div>
+                </a>
+            </div>
+        </nav>
+
+        <section class="landingimg">
+            <div class="imgcontainer">
+                <img src="Screenshot 2023-08-12 143324.png">
+                <div class="maintext">
+                    Contact us
+                </div>
+                <div class="subtext">
+                    Want to file an inquiry or suggest? Contact us
+                </div>
+                <!-- <div class="landingbtn">
+                    <a href="#courses"><button class="landingbutton">Sign up for a course</button></a>
+                </div> -->
+            </div>
+        </section>
+
+        <p style="font-weight: lighter; margin-top: 100px; font-size: 70px; margin-left: 5%;">Contact form:</p>
+
+        <section class="contact">
+            <div class="contactform">
+                <div class="firstandlastname">
+                    <div class="firstname">
+                        <p>First name:</p>
+                        <input type="text" placeholder="Eg: John" id="fn">
+                    </div>
+                    <div class="firstname">
+                        <p>Last name:</p>
+                        <input type="text" placeholder="Eg: Doe" id="ln">
+                    </div>
+                </div>
+                <div class="emailadress">
+                    <p>Email:</p>
+                    <input type="email" placeholder="Eg: xxxxxxxx@gmail.com" id="ea">
+                </div>
+                <div class="typeofinquiry">
+                    <p>Type of inquiry:</p>
+                    <select>
+                        <option>--- Select a type of inquiry ---</option>
+                        <option>I forgot my password/username</option>
+                        <option>I would like to report someone</option>
+                        <option>I would like to ask about my purchases</option>
+                        <option>I would like a refund</option>
+                        <option>Other issues</option>
+                    </select>
+                </div>
+                <div class="description" id="dc">
+                    <p>Description:</p>
+                    <textarea placeholder="Enter additional information if needed - maximum 500 characters"></textarea>
+                </div>
+            </div>
+            <button class="send" id="send">Submit</button>
+        </section>
+
+        <footer>
+            <div class="general">
+                <div class="address">
+                    <h1>School Name</h1>
+                    <p>Address: 30215 Abcdef St., XXXX County, NJ</p>
+                    <p>Tel: (+1) 5833 9518</p>
+                </div>
+                <div class="aboutus">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque expedita velit porro eligendi, voluptatem vero molestias esse ipsa, atque optio veritatis quaerat dolor, placeat distinctio temporibus dolore. Tempora, dolores.</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="links">
+                <h2>Relevant links</h2>
+                <p><a href="main.html">Home</a></p>
+                <p><a href="student.html">Students</a></p>
+                <p><a href="course.html">Courses</a></p>
+                <p><a href="contact.html">Contact us</a></p>
+                <p><a href="cart.html">Your Cart</a></p>
+                <p><a href="login.html">Login</a></p>
+            </div>
+            <div class="line"></div>
+            <div class="socials">
+                <h2>Socials</h2>
+                <div class="icon">
+                    <div class="socialtext">Follow us on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext">See our videos on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext" id="socialtext3">Keep up with our recent news with</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./contact.js"></script>
+    </body>
+</html>

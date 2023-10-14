@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="./course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://kit.fontawesome.com/931fbdecb4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="navtitle">School</div>
+            <div class="navcontent">
+                <a href="main.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="./student.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                        <p>Students</p>
+                    </div>
+                </a>
+                <a href="./course.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-book-open fa-xl" style="color: #ffffff;"></i>
+                        <p>Courses</p>
+                    </div>
+                </a>
+                <a href="./contact.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-regular fa-address-card fa-xl" style="color: #ffffff;"></i>
+                        <p>Contact us</p>
+                    </div>
+                </a>
+                <a href="./cart.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
+                        <p id="cart">Your Cart</p>
+                    </div>
+                </a>
+                <a href="./login.html" style="text-decoration: none;">
+                    <div class="content" id="registerbutton">
+                        <i class="fa-solid fa-right-to-bracket fa-xl" style="color: #ffffff;"></i>
+                        <p>Register</p>
+                    </div>
+                </a>
+                <a href="account.html" style="text-decoration: none;">
+                    <div class="content" id="welcometext"></div>
+                </a>
+            </div>
+        </nav>
+
+        <section class="landingimg">
+            <div class="imgcontainer">
+                <img src="Screenshot 2023-08-12 143324.png">
+                <div class="maintext">
+                    Slogan
+                </div>
+                <div class="subtext">
+                    Our main priority is to ensure all students get quality education whilst being safe at our campus. 2023-2024 registerations now open.
+                </div>
+                <div class="landingbtn">
+                    <a href="#courses"><button class="landingbutton">Sign up for a course</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popularcourses" id="courses">
+            <div class="pctitle">
+                Most popular courses
+            </div>
+            <div class="mpcourses c1">
+                <div class="course">
+                    <img src="https://pc.fsu.edu/sites/g/files/upcbnu1536/files/media/Images/Academics/Computer%20Programming/Computer%20Programming%20banner.jpg">
+                    <div class="info">
+                        <div class="field">Computer Science</div>
+                        <div class="coursename">Computer Programming</div>
+                        <div class="description">
+                            One of the fastest growing and developing fields, Computer Science. With 40 Lessons along with 10 Interactive assignments, this course will help you build yourself a foundation for programming.
+                        </div>
+                    </div>
+                    <div class="bottominfo">
+                        <button onclick="location.href = 'courseinfo.html'"><p>Find out more >></p></button>
+                        <div class="rating">
+                            <div>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                            </div>
+                            <p>5.0 ⭐ | 326 Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="https://stockton.edu/business/images/computer-science-banner.jpg">
+                    <div class="info">
+                        <div class="field">Computer Science</div>
+                        <div class="coursename">CS50's Intro to Computer Science</div>
+                        <div class="description">
+                            This course provides a succinct but comphrehensive overview of what computer science is about. Whether you are a newbie who has never heard of ‘Hello World!’, or a programmer who knows a thing or two about computers, you’ll come out of this course having learned something new.
+                        </div>
+                    </div>
+                    <div class="bottominfo">
+                        <button onclick="location.href = 'courseinfo.html'"><p>Find out more >></p></button>
+                        <div class="rating">
+                            <div>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #eeff05;"></i>
+                                <i class="fa-solid fa-star fa-2xl" style="color: #858677;"></i>
+                            </div>
+                            <p>4.7 ⭐ | 1,509 Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pctitle">
+                New courses
+            </div>
+            <div class="mpcourses c2" id="newcourses">
+                <div class="course">
+                    <img src="https://pc.fsu.edu/sites/g/files/upcbnu1536/files/media/Images/Academics/Computer%20Programming/Computer%20Programming%20banner.jpg">
+                    <div class="info">
+                        <div class="field">Computer Science</div>
+                        <div class="coursename">Computer Programming</div>
+                        <div class="description">
+                            One of the fastest growing and developing fields, Computer Science. With 40 Lessons along with 10 Interactive assignments, this course will help you build yourself a foundation for programming.
+                        </div>
+                    </div>
+                    <div class="bottominfo">
+                        <button onclick="location.href = 'courseinfo.html'"><p>Find out more >></p></button>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="https://pc.fsu.edu/sites/g/files/upcbnu1536/files/media/Images/Academics/Computer%20Programming/Computer%20Programming%20banner.jpg">
+                    <div class="info">
+                        <div class="field">Computer Science</div>
+                        <div class="coursename">Computer Programming</div>
+                        <div class="description">
+                            One of the fastest growing and developing fields, Computer Science. With 40 Lessons along with 10 Interactive assignments, this course will help you build yourself a foundation for programming.
+                        </div>
+                    </div>
+                    <div class="bottominfo">
+                        <button onclick="location.href = 'courseinfo.html'"><p>Find out more >></p></button>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="https://pc.fsu.edu/sites/g/files/upcbnu1536/files/media/Images/Academics/Computer%20Programming/Computer%20Programming%20banner.jpg">
+                    <div class="info">
+                        <div class="field">Computer Science</div>
+                        <div class="coursename">Computer Programming</div>
+                        <div class="description">
+                            One of the fastest growing and developing fields, Computer Science. With 40 Lessons along with 10 Interactive assignments, this course will help you build yourself a foundation for programming.
+                        </div>
+                    </div>
+                    <div class="bottominfo">
+                        <button onclick="location.href = 'courseinfo.html'"><p>Find out more >></p></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pctitle">
+                Explore our available fields
+            </div>
+            <div class="fields">
+                <div class="fieldpictures">
+                    <img src="https://dg1xqmhtoint1.cloudfront.net/img/idm/Blog/fdes-12.webp?mtime=20220426155506&focal=none">
+                    <img src="https://www.verywellmind.com/thmb/hpHYaXJoSVl6YTvLgVdAgqyi3mA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-470803747-56a8d18d5f9b58b7d0f56bd0.jpg">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrdK828MisuCJPuKYhZERZGkjS8YHIGJ6wgA&usqp=CAU">
+                    <img src="https://cdn.britannica.com/51/190451-050-0E9B50F5/soundblock-Wood-scales-books-stack-background-leather.jpg">
+                </div>
+                <div class="fieldpictures">
+                    <img src="https://www.wlc.edu/_images/academics/IMPACT-History.jpg">
+                    <img src="https://www.ciit.edu.ph/wp-content/uploads/2017/05/string-of-codes-computer-science-course.jpeg">
+                    <img src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2019/05/23/welcomia_ss_periodictbl_552027100.jpg?itok=xc9amOKS">
+                    <img src="https://www.effective-states.org/wp-content/uploads/growth-1.jpg">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="general">
+                <div class="address">
+                    <h1>School Name</h1>
+                    <p>Address: 30215 Abcdef St., XXXX County, NJ</p>
+                    <p>Tel: (+1) 5833 9518</p>
+                </div>
+                <div class="aboutus">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque expedita velit porro eligendi, voluptatem vero molestias esse ipsa, atque optio veritatis quaerat dolor, placeat distinctio temporibus dolore. Tempora, dolores.</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="links">
+                <h2>Relevant links</h2>
+                <p><a href="main.html">Home</a></p>
+                <p><a href="student.html">Students</a></p>
+                <p><a href="course.html">Courses</a></p>
+                <p><a href="contact.html">Contact us</a></p>
+                <p><a href="cart.html">Your Cart</a></p>
+                <p><a href="login.html">Login</a></p>
+            </div>
+            <div class="line"></div>
+            <div class="socials">
+                <h2>Socials</h2>
+                <div class="icon">
+                    <div class="socialtext">Follow us on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext">See our videos on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext" id="socialtext3">Keep up with our recent news with</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./course.js"></script>
+    </body>
+</html>

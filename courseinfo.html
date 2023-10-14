@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course info</title>
+    <link rel="stylesheet" href="./courseinfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://kit.fontawesome.com/931fbdecb4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="navtitle">School</div>
+            <div class="navcontent">
+                <a href="main.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="./student.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                        <p>Students</p>
+                    </div>
+                </a>   
+                <a href="./course.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-book-open fa-xl" style="color: #ffffff;"></i>
+                        <p>Courses</p>
+                    </div>
+                </a>
+                <a href="./contact.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-regular fa-address-card fa-xl" style="color: #ffffff;"></i>
+                        <p>Contact us</p>
+                    </div>
+                </a>
+                <a href="./cart.html" style="text-decoration: none;">
+                    <div class="content">
+                        <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
+                        <p id="cart">Your Cart</p>
+                    </div>
+                </a>
+                <a href="./login.html" style="text-decoration: none;">
+                    <div class="content" id="registerbutton">
+                        <i class="fa-solid fa-right-to-bracket fa-xl" style="color: #ffffff;"></i>
+                        <p>Register</p>
+                    </div>
+                </a>
+                <a href="account.html" style="text-decoration: none;">
+                    <div class="content" id="welcometext"></div>
+                </a>
+            </div>
+        </nav>
+
+        <section class="landingimg">
+            <div class="imgcontainer">
+                <img src="Screenshot 2023-08-12 143324.png">
+                <div class="maintext">
+                    Course info
+                </div>
+                <!-- <div class="subtext">
+                    Our main priority is to ensure all students get quality education whilst being safe at our campus. 2023-2024 registerations now open.
+                </div> -->
+                <!-- <div class="landingbtn">
+                    <a href="#courses"><button class="landingbutton">Sign up for a course</button></a>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="courseinfo">
+            <div class="container">
+                <div class="img">
+                    <img src="https://stockton.edu/business/images/computer-science-banner.jpg">
+                </div>
+                <div class="cinfo">
+                    <div class="ctitle">
+                        CS50's Intro to Computer Science
+                    </div>
+                    <div class="price">
+                        <p>$100</p> <p>$80.20</p>
+                    </div>
+                    <div class="cdescription">
+                        This course provides a succinct but comphrehensive overview of what computer science is about. Whether you are a newbie who has never heard of ‘Hello World!’, or a programmer who knows a thing or two about computers, you’ll come out of this course having learned something new.
+                    </div>
+                    <div class="cdescription">
+                        Features: <br>
+                        <ul>
+                            <li>48 Non-advertisement Online Lessons</li>
+                            <li>15 Interactive Assignments with Recommendations and Tutorial Videos</li>
+                            <li>Contact with a Real Life Assistant</li>
+                            <li>~600 hours worth of content about What You Need to Know about Computer Science</li>
+                        </ul><br>
+                        Benefits:<br>
+                        <ul>
+                            <li>Future Discounts for Courses related to the same Field</li>
+                        </ul>
+                    </div>
+                    <button class="purchase" id="purchase">Add to Cart for $80.20</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="general">
+                <div class="address">
+                    <h1>School Name</h1>
+                    <p>Address: 30215 Abcdef St., XXXX County, NJ</p>
+                    <p>Tel: (+1) 5833 9518</p>
+                </div>
+                <div class="aboutus">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque expedita velit porro eligendi, voluptatem vero molestias esse ipsa, atque optio veritatis quaerat dolor, placeat distinctio temporibus dolore. Tempora, dolores.</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="links">
+                <h2>Relevant links</h2>
+                <p><a href="main.html">Home</a></p>
+                <p><a href="student.html">Students</a></p>
+                <p><a href="course.html">Courses</a></p>
+                <p><a href="contact.html">Contact us</a></p>
+                <p><a href="cart.html">Your Cart</a></p>
+                <p><a href="login.html">Login</a></p>
+            </div>
+            <div class="line"></div>
+            <div class="socials">
+                <h2>Socials</h2>
+                <div class="icon">
+                    <div class="socialtext">Follow us on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext">See our videos on</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                    <div class="socialtext" id="socialtext3">Keep up with our recent news with</div>
+                    <div class="line2"></div>
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./courseinfo.js"></script>
+    </body>
+</html>

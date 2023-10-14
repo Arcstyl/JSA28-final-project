@@ -10,6 +10,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 </head>
     <body>
+        <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "136450872889999");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
         <nav class="navbar">
             <div class="navtitle">School</div>
             <div class="navcontent">
@@ -178,7 +208,7 @@
             <div class="line"></div>
             <div class="links">
                 <h2>Relevant links</h2>
-                <p><a href="./main.html">Home</a></p>
+                <p><a href="./index.html">Home</a></p>
                 <p><a href="student.html">Students</a></p>
                 <p><a href="course.html">Courses</a></p>
                 <p><a href="contact.html">Contact us</a></p>
